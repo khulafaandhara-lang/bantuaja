@@ -9,5 +9,5 @@
    ============================================================ */
 window.BB_CONFIG = {
   // ⬇️ GANTI DENGAN URL WEB APP APPS SCRIPT ANDA
-  GAS_URL: https://script.google.com/macros/s/AKfycbxtWKgbIPXH_8eheVE0cwTThtUBzHM-2A0ZoLCY5vhm3Yhi5EYzKMyo8_NwPXXf__bv/exec
+  GAS_URL: 'https://script.google.com/macros/s/AKfycbxtWKgbIPXH_8eheVE0cwTThtUBzHM-2A0ZoLCY5vhm3Yhi5EYzKMyo8_NwPXXf__bv/exec'
 };
