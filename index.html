@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="description" content="BANTU AJA — Marketplace jasa lokal Kecamatan Lumbir, Banyumas. Semua Kebutuhan, Ada yang Bantu.">
+  <meta name="description" content="BANTU AJA — Marketplace jasa lokal Kecamatan Lumbir, Banyumas. Semua Urusan, Ada Solusinya.">
   <title>BANTU AJA — Semua Kebutuhan, Ada yang Bantu</title>
   <link rel="manifest" href="manifest.json">
   <link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
@@ -767,7 +767,7 @@ reg('beranda', 'Beranda', null, async (p, v) => {
   const list = h.mitra.filter(m => !area || m.wilayah.indexOf(area) >= 0);
   v.innerHTML =
     '<div class="chips" role="group" aria-label="Filter desa"><button class="chip ' + (!area ? 'on' : '') + '" data-act="homeArea" data-v="">Semua Desa</button>' + desa.map(d => '<button class="chip ' + (area === d.nama ? 'on' : '') + '" data-act="homeArea" data-v="' + E(d.nama) + '">' + E(d.nama.replace('Desa ', '')) + '</button>').join('') + '</div>' +
-    '<div class="bb-card hero mt-2"><div class="eyebrow">Solusi harian warga ' + E(h.settings.namaDaerah || 'Banyumas') + '</div><h1 class="title-lg mt-2">Semua Kebutuhan,<br><span style="color:var(--gold-text)">Ada yang Bantu.</span></h1>' +
+    '<div class="bb-card hero mt-2"><div class="eyebrow">Solusi harian warga ' + E(h.settings.namaDaerah || 'Banyumas') + '</div><h1 class="title-lg mt-2">Semua Urusan,<br><span style="color:var(--gold-text)">Ada Solusinya.</span></h1>' +
     '<p class="muted mt-2 mb-3">Penyedia jasa terverifikasi tetangga sendiri di Kecamatan Lumbir & sekitarnya. Cepat, amanah, dan harga sedulur.</p>' +
     '<div class="row-flex between wrap gap-2 flat" style="background:var(--l2);border-radius:12px;padding:10px 12px"><span class="small"><i class="bi bi-circle-fill" style="color:var(--ok);font-size:8px"></i> <b style="color:var(--tx)">' + h.stats.mitraSiaga + '</b> Mitra Siap Bantu</span><span class="small" style="color:var(--gold-text)"><i class="bi bi-patch-check"></i> ' + h.stats.mitraTerverifikasi + ' mitra terverifikasi</span></div></div>' +
     '<form id="srch" class="row-flex gap-2 mt-3" role="search"><div class="inp-ico grow"><i class="bi bi-search"></i><input class="inp" name="q" placeholder="Cari tukang ledeng, servis AC, renovasi..." aria-label="Cari jasa"></div><button class="iconbtn" style="border-radius:12px" type="submit" aria-label="Cari"><i class="bi bi-arrow-right"></i></button></form>' +
@@ -822,7 +822,7 @@ reg('caraKerja', 'Cara Kerja', null, (p, v) => {
 }, 'beranda');
 
 reg('tentang', 'Tentang BANTU AJA', null, (p, v) => {
-  v.innerHTML = card(logoMark('mb-3') + '<h1 class="title-lg">' + E(appName()) + '</h1><div class="eyebrow mt-1">Semua Kebutuhan, Ada yang Bantu.</div><p class="mt-3">BANTU AJA adalah platform yang mempertemukan masyarakat yang membutuhkan bantuan sehari-hari dengan penyedia jasa lokal terpercaya. Dimulai dari Kecamatan Lumbir, Kabupaten Banyumas.</p><p>Kami percaya ekonomi lokal tumbuh ketika keahlian warga mudah ditemukan dan dihargai secara adil.</p>') +
+  v.innerHTML = card(logoMark('mb-3') + '<h1 class="title-lg">' + E(appName()) + '</h1><div class="eyebrow mt-1">Semua Urusan, Ada Solusinya.</div><p class="mt-3">BANTU AJA adalah platform yang mempertemukan masyarakat yang membutuhkan bantuan sehari-hari dengan penyedia jasa lokal terpercaya. Dimulai dari Kecamatan Lumbir, Kabupaten Banyumas.</p><p>Kami percaya ekonomi lokal tumbuh ketika keahlian warga mudah ditemukan dan dihargai secara adil.</p>') +
     card('<h2 class="mb-2" style="font-size:16px">Nilai Kami</h2>' + [['Mudah', 'layanan mudah ditemukan dan dipesan'], ['Terpercaya', 'mitra memiliki profil dan proses verifikasi'], ['Lokal', 'mengutamakan tenaga dan potensi warga sekitar'], ['Transparan', 'harga dikonfirmasi sebelum pekerjaan dimulai'], ['Bermanfaat', 'membuka peluang penghasilan bagi warga']].map(x => '<div class="list-row"><span class="ic"><i class="bi bi-check2"></i></span><div><b style="color:var(--tx)">' + x[0] + '</b> — <span class="muted">' + x[1] + '</span></div></div>').join('')) +
     '<button class="btn-gh btn-block" data-act="policy"><i class="bi bi-shield-lock"></i> Kebijakan Privasi & Syarat Penggunaan</button>';
 }, 'beranda');
