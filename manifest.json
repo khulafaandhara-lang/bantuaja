@@ -1,0 +1,50 @@
+{
+  "name": "BANTU AJA — Semua Kebutuhan, Ada yang Bantu",
+  "short_name": "BANTU AJA",
+  "description": "Marketplace jasa lokal Kecamatan Lumbir, Banyumas. Hubungkan kebutuhan warga dengan mitra terverifikasi.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0F1115",
+  "theme_color": "#0F1115",
+  "lang": "id",
+  "dir": "ltr",
+  "categories": ["business", "productivity", "utilities"],
+  "icons": [
+    {
+      "src": "icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Pesan Jasa",
+      "short_name": "Pesan",
+      "description": "Buat pesanan jasa baru",
+      "url": "./?goto=pesanBaru",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Pesanan Saya",
+      "short_name": "Pesanan",
+      "description": "Lihat daftar pesanan",
+      "url": "./?goto=pesananList",
+      "icons": [{ "src": "icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
